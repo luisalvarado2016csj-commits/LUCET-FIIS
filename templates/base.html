@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCET - Campaña FIIS 2026</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo-lucet.png') }}" alt="Logo LUCET" class="nav-logo">
+            <span class="logo-text">LUCET 47</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#historia">Historia</a>
+            <a href="#propuestas">Propuestas</a>
+            <a href="#consejo">Consejo de Facultad</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p><strong>Liderazgo Universitario por el Cambio, la Ética y la Transformación</strong></p>
+        <p>Facultad de Ingeniería Industrial y de Sistemas - UNFV</p>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">¡Vota por el cambio, marca el 47!</p>
+    </footer>
+
+</body>
+</html>

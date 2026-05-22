@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Liderazgo Universitario por el Cambio, la Ética y la Transformación</h1>
+        <p>¡Bienvenidos a la campaña de LUCET! Nuestra voz, tu voto en la FIIS.</p>
+        <a href="#propuestas" class="btn-unirse">Ver Plan de Trabajo</a>
+    </div>
+    <div class="hero-image-single">
+        <img src="{{ url_for('static', filename='images/mascota-fiis.png') }}" alt="Mascota FIIS" class="mascota-hero">
+    </div>
+</section>
+
+<div class="container">
+    
+    <div class="banner-voto-central">
+        <div class="voto-content">
+            <img src="{{ url_for('static', filename='images/numero-voto.png') }}" alt="Vota 47" class="img-voto-grande">
+            <div>
+                <h2>¡Este es el momento del cambio!</h2>
+                <p>Apoya una representación técnica, transparente y con verdadero liderazgo estudiantil en nuestro Consejo de Facultad. Marcando el 47 aseguras que tu voz cuente.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="historia" class="card">
+        <h2>La Historia de LUCET</h2>
+        <div class="grid-info">
+            <div>
+                <p><strong>Cómo nacimos:</strong> Nuestra lista surgió de la necesidad de representar fielmente a los estudiantes, motivados por un cambio real dentro de la facultad.</p>
+            </div>
+            <div>
+                <p><strong>Qué representamos:</strong> Integridad, compromiso y una transformación enfocada en el bienestar académico y humano.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="propuestas" class="card">
+        <h2>Nuestro Plan de Trabajo - FIIS 2026</h2>
+        <p style="margin-bottom: 25px;">Conoce nuestras propuestas estructuradas para el desarrollo integral de nuestra facultad:</p>
+        
+        <div class="grid-propuestas">
+            
+            <div class="propuesta-item">
+                <h3>🌱 1. Bienestar e Infraestructura Estudiantil</h3>
+                <ul>
+                    <li>Fiscalización y mejora continua de baños, techos, pisos y mobiliario.</li>
+                    <li>Habilitación de estacionamientos para bicicletas.</li>
+                    <li>Promoción de pausas activas y actividades recreativas entre clases.</li>
+                    <li>Celebración organizada de la Semana de Facultad con actividades culturales, deportivas y académicas por el aniversario.</li>
+                </ul>
+            </div>
+
+            <div class="propuesta-item">
+                <h3>💼 2. Oportunidades Académicas y Desarrollo Profesional</h3>
+                <ul>
+                    <li>Canal oficial de difusión de prácticas preprofesionales, becas y oportunidades laborales.</li>
+                    <li>Organización de visitas empresariales y visitas técnicas.</li>
+                    <li>Exposición en el Consejo de Facultad de la necesidad de cursos extracurriculares a bajo costo para créditos internos.</li>
+                    <li>Charlas con egresados y profesionales del sector.</li>
+                    <li>Talleres de CV, simulación de entrevistas y preparación laboral.</li>
+                    <li>Programa de mentorías entre estudiantes de ciclos superiores y cachimbos.</li>
+                </ul>
+            </div>
+
+            <div class="propuesta-item">
+                <h3>💻 3. Innovación, Tecnología y Digitalización</h3>
+                <ul>
+                    <li>Implementación de una página web estudiantil informativa y organizada.</li>
+                    <li>Digitalización de trámites internos para reducir colas y uso de papel.</li>
+                    <li>Creación de un banco académico con exámenes, prácticas calificadas y material de apoyo.</li>
+                    <li>Sistema de inventario y reporte de materiales/equipos de laboratorio.</li>
+                </ul>
+            </div>
+
+            <div class="propuesta-item">
+                <h3>📚 4. Apoyo Académico y Recursos</h3>
+                <ul>
+                    <li><strong>Banco de Materiales Universitarios:</strong> Préstamos y donaciones de libros, calculadoras y materiales académicos.</li>
+                    <li>Apertura y mejor aprovechamiento de los laboratorios.</li>
+                    <li>Reducción de trabas y fiscalización estricta de procesos académicos (aplazados, sustis y parciales).</li>
+                </ul>
+            </div>
+
+            <div class="propuesta-item">
+                <h3>🏛️ 5. Representación y Participación Estudiantil</h3>
+                <ul>
+                    <li>Difusión clara y constante de información académica y trámites.</li>
+                    <li>Formulario estudiantil activo para reportar problemas, sugerencias y necesidades.</li>
+                    <li><strong>Mayor representación para Ingeniería de Transporte</strong> en todas las actividades y eventos.</li>
+                    <li>Fiscalización continua de actas y acuerdos estudiantiles.</li>
+                    <li>Reconocimiento formal a estudiantes por participación en talleres, tutorías y voluntariado.</li>
+                </ul>
+            </div>
+
+            <div class="propuesta-item">
+                <h3>🚀 6. Emprendimiento e Integración</h3>
+                <ul>
+                    <li>Ferias de proyectos, innovación y emprendimiento.</li>
+                    <li>Incubadora básica para estudiantes que deseen crear marcas o productos.</li>
+                    <li><strong>Actividades integradoras:</strong> Campeonatos, cine, ferias, eventos culturales y verbena universitaria.</li>
+                    <li>Gestión de convenios externos con beneficios o descuentos (Smart Fit, etc.) a cambio de publicidad en los canales de la facultad.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="consejo" class="card">
+        <h2>¿Qué hace el Consejo de Facultad?</h2>
+        <p>Es el máximo órgano de gobierno de la FIIS donde se toman las decisiones académicas y administrativas clave. Llevar una representación estudiantil fuerte ahí adentro sirve para gestionar de verdad las mejoras en laboratorios, la transparencia en los trámites y el bienestar común. <strong>Tu voto asegura que quienes decidan tengan tus mismos intereses.</strong></p>
+    </section>
+
+    <section class="card">
+        <h2>Nuestros Pilares</h2>
+        <ul>
+            <li><strong>Unidad y Acción:</strong> Saludos de unión al finalizar las sesiones para consolidar el lazo entre los representantes y la base estudiantil.</li>
+            <li><strong>Escucha Activa:</strong> Cada integrante de LUCET está comprometido a dialogar directamente con la comunidad estudiantil y hacer entrega de stickers para generar cercanía y participación.</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="card redes-section">
+        <h2>¡Conéctate con nosotros!</h2>
+        <p>Síguenos para enterarte de los debates, eventos de campaña y dejarnos tus sugerencias:</p>
+        <div class="redes-container">
+            <a href="https://www.instagram.com/lucet.fiis_unfv?igsh=MW94OWllczRqcHJhMw==" target="_blank" class="red-link instagram">📸 Instagram (@lucet.fiis)</a>
+            <a href="https://www.tiktok.com/@lucet.fiis.unfv?_r=1&_t=ZS-96WmlFlL9eM" target="_blank" class="red-link tiktok">🎵 TikTok (@lucet.fiis)</a>
+            <a href="https://chat.whatsapp.com/KFuD0gcHWM9ADAQPFJDNTj" target="_blank" class="red-link whatsapp">💬 Comunidad WhatsApp</a>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
