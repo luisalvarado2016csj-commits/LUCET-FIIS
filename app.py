@@ -2,11 +2,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+app.wsgi_app = app.wsgi_app 
+
 @app.route('/')
 def home():
-    # Renderiza la página principal de LUCET
     return render_template('index.html')
 
 if __name__ == '__main__':
-    # El debug=True sirve para que la web se actualice sola cuando hagas cambios
+    # Esto solo se ejecutará cuando tú lo corras en tu computadora (local)
     app.run(debug=True)
